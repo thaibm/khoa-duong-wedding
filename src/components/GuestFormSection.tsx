@@ -9,6 +9,7 @@ import { db } from "../firebaseApp";
 import { Heading } from "./Heading";
 import { Heading2 } from "./Heading2";
 import { InViewAnimation } from "./InViewAnimation";
+import { clearScreenDown } from "readline";
 
 export type FormData = {
   guestType: "groomGuest" | "brideGuest";
@@ -119,7 +120,7 @@ export const GuestFormSection = () => {
   };
 
   const onSubmit = handleSubmit(async (data) => {
-    if (!id) return;
+    // if (!id) return;
     sessionStorage.setItem("formData", JSON.stringify(data));
     navigate("/confirmation");
     return;
@@ -158,7 +159,7 @@ export const GuestFormSection = () => {
             setValue(key as keyof FormData, docSnap.data()[key]);
           }
         }
-        // setFormState("sent");
+        setFormState("sent");
         setCompanionCount(4);
       }
     }
@@ -234,7 +235,7 @@ export const GuestFormSection = () => {
               </NameInputWrapper>
             </NameInputs>
           </FieldWrapper>
-          <FieldWrapper>
+          {/* <FieldWrapper>
             <Field>
               {t("furigana")} <RequiredLabel />
             </Field>
@@ -254,7 +255,7 @@ export const GuestFormSection = () => {
                 />
               </NameInputWrapper>
             </NameInputs>
-          </FieldWrapper>
+          </FieldWrapper> */}
           <FieldWrapper className="radioField">
             <Field>
               {t("gender")} <RequiredLabel />
@@ -270,13 +271,13 @@ export const GuestFormSection = () => {
               <span className="checkmark" />
             </label>
           </FieldWrapper>
-          <FieldWrapper>
+          {/* <FieldWrapper>
             <Field>
               {t("phoneNumber")} <RequiredLabel />
             </Field>
             <input type="tel" {...register("phone")} />
-          </FieldWrapper>
-          <FieldWrapper>
+          </FieldWrapper> */}
+          {/* <FieldWrapper>
             <Field>
               {t("zipCode")} <RequiredLabel />
             </Field>
@@ -295,8 +296,8 @@ export const GuestFormSection = () => {
                 onBlur={handleZipCodeBlur}
               />
             </ZipInputWrapper>
-          </FieldWrapper>
-          <FieldWrapper>
+          </FieldWrapper> */}
+          {/* <FieldWrapper>
             <Field>
               {t("address")} <RequiredLabel />
             </Field>
@@ -305,7 +306,7 @@ export const GuestFormSection = () => {
               {...register("address")}
               placeholder="東京都港区青山..."
             />
-          </FieldWrapper>
+          </FieldWrapper> */}
           <FieldWrapper>
             <Field>
               {t("email")} <RequiredLabel />
@@ -484,6 +485,8 @@ const Intro = styled.div`
 const FormWrapper = styled.div`
   background: #fff;
   color: #333;
+  margin: auto;
+  width: 70%;
 `;
 
 const FieldWrapper = styled.div`

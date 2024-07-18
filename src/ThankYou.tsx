@@ -27,7 +27,7 @@ export const ThankYou = () => {
     <Container>
       <Heading>Thank you</Heading>
       <Message dangerouslySetInnerHTML={{ __html: thankYouMessage }}></Message>
-      <BackButton onClick={handleBack}>Back</BackButton>
+      <BackButton onClick={handleBack}>Trở lại</BackButton>
     </Container>
   );
 };
