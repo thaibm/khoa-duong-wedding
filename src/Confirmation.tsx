@@ -75,13 +75,13 @@ export const Confirmation = () => {
     guestType,
     firstName,
     lastName,
-    firstNameKana,
-    lastNameKana,
+    // firstNameKana,
+    // lastNameKana,
     gender,
-    phone,
-    zip1,
-    zip2,
-    address,
+    // phone,
+    // zip1,
+    // zip2,
+    // address,
     email,
     message,
     allergy,
@@ -122,23 +122,23 @@ export const Confirmation = () => {
             : `${lastName} ${firstName}`
         }
       />
-      <ConfirmationListItem
+      {/* <ConfirmationListItem
         field={t("furigana")}
         value={
           i18n.language === "en"
             ? `${firstNameKana} ${lastNameKana}`
             : `${lastNameKana} ${firstNameKana}`
         }
-      />
+      /> */}
       <ConfirmationListItem
         field={t("gender")}
         value={
           gender === "male" ? t("male") : gender === "female" ? t("female") : ""
         }
       />
-      <ConfirmationListItem field={t("phoneNumber")} value={phone} />
+      {/* <ConfirmationListItem field={t("phoneNumber")} value={phone} />
       <ConfirmationListItem field={t("zipCode")} value={`${zip1}-${zip2}`} />
-      <ConfirmationListItem field={t("address")} value={address} />
+      <ConfirmationListItem field={t("address")} value={address} /> */}
       <ConfirmationListItem field={t("email")} value={email} />
       <ConfirmationListItem field={t("message")} value={message ?? ""} />
       <ConfirmationListItem field={t("allergy")} value={allergy ?? ""} />

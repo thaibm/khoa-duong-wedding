@@ -9,70 +9,70 @@ export const ja = {
   location: `11h giờ ngày 25/07/2024`,
   phone: "電話",
   informationEnd: "Rất mong mọi người đến chung vui. ❤︎",
-  formIntro: `お手数ですが　下記お日にち迄に<br>
-  出欠情報のご連絡をお願い申し上げます<br>
-  <div class="medium-font-size">2024年07月25日 （水）</div>
-  期⽇までのご連絡が難しい場合には<br>ご一報いただけますと幸いです`,
-  formTitle: "ゲスト様入力項目",
-  guestType: "ゲスト様",
-  groomGuest: "新郎側",
-  brideGuest: "新婦側",
-  name: "お名前",
-  lastName: "姓",
-  firstName: "名",
+  formIntro: `Xin vui lòng trả lời vào trước ngày<br>
+  <div class="medium-font-size">Chủ nhật, 21 tháng 07, 2024</div>
+  <br>Phản hồi của bạn quan trọng với tụi mình trong việc hoàn thiện danh sách khách mời và sắp xếp đón tiếp các bạn một cách chu đáo nhất.<br>
+  Tụi mình hy vọng bạn sẽ tham gia vào ngày đặc biệt này và cùng tụi mình chia sẻ niềm vui.`,
+  formTitle: "Biểu mẫu Tham dự",
+  guestType: "Loại khách mời",
+  groomGuest: "Khách của Chú Rể",
+  brideGuest: "Khách của Cô Dâu",
+  name: "Tên",
+  lastName: "Họ",
+  firstName: "Tên",
   furigana: "ふりがな",
   furiganaFirstName: "めい",
   furiganaLastName: "せい",
-  gender: "性別",
-  male: "男性",
-  female: "女性",
+  gender: "Giới tính",
+  male: "Nam",
+  female: "Nữ",
   phoneNumber: "電話番号",
   zipCode: "郵便番号",
   address: "ご住所",
-  email: "メールアドレス",
-  message: "メッセージ",
-  messageFieldDescription: "新郎新婦にメッセージを送ることができます",
-  messageMaxLengthNotice: "（※250文字まで入力できます）",
-  allergy: "アレルギー",
-  allergyFieldDescription: "アレルギーをお持ちの方のみご記入ください",
-  companion: "お連れ様",
-  addCompanion: "お連れ様追加",
-  addCompanionFieldDescription: "ご本人様以外の参加される方をご記入ください",
-  companionName: "お連れ様のお名前",
-  companionAllergy: "お連れ様アレルギー詳細",
-  addMoreCompanions: "お連れ様を追加する",
-  required: "必須",
-  attendance: "出欠",
-  attend: "ご出席",
-  decline: "ご欠席",
-  hold: "保留",
-  confirm: "確認する",
-  formSentAttend: `{{name}}さん、返信が早くて、本当に嬉しいです！フォームに記入して送信してくれた手間に感謝します。本当に嬉しいですし、式で会えるのを楽しみにしています。`,
-  formSentDecline: `結婚式に参加できないとのご返信をいただき、ありがとうございました。{{name}}さんのご都合を理解し、ご自身の選択を尊重します。今後ともお互いの幸せを祈りながら、友情を育んでいけたらと思います。`,
-  formSentHold: `結婚式のオンライン招待状に対して、保留のお返事をいただいたこと、承知いたしました。忙しい中、ご返信いただき、ありがとうございます。もし何か変更があれば、お気軽にご連絡ください。結婚式でお会いできるのを楽しみにしています！`,
-  formSentEdit: `もし返信内容を編集したい場合は、以下のボタンをクリックしてください。`,
-  edit: "内容を編集する",
-  finalConfirmation: "最後確認",
-  ok: "出欠情報を送信する",
-  cancel: "入力画面に戻る",
-  thankYouAttend: `「出席」でお伝えしました。<br>
+  email: "Địa chỉ email",
+  message: "Tin nhắn",
+  messageFieldDescription: "Tin nhắn này sẽ được gửi đến Chú Rể và Cô Dâu",
+  messageMaxLengthNotice: "Có thể nhập tối đa 25 ký tự",
+  allergy: "Dị ứng",
+  allergyFieldDescription: "Hãy cho chúng tôi biết nếu bạn có dị ứng",
+  companion: "Khách thêm",
+  addCompanion: "Thêm người thân",
+  addCompanionFieldDescription: "Xin vui lòng điền thông tin người tham gia ngoài bạn",
+  companionName: "Tên",
+  companionAllergy: "Dị ứng",
+  addMoreCompanions: "Thêm người đi cùng",
+  required: "Bắt buộc",
+  attendance: "Tham dự",
+  attend: "Tham gia",
+  decline: "Từ chối",
+  hold: "Chờ",
+  confirm: "Xác nhận và gửi",
+  formSentAttend: `Cảm ơn {{name}} đã dành thời gian điền và gửi biểu mẫu. Tôi thực sự rất vui và mong được gặp các bạn tại buổi lễ.`,
+  formSentDecline: `Cảm ơn bạn đã trả lời rằng {{name}} sẽ không thể tham dự đám cưới. Chúng tôi hiểu hoàn cảnh của {{name}} và tôn trọng lựa chọn của bạn. Tôi hy vọng rằng chúng ta có thể tiếp tục vun đắp tình bạn trong khi cầu nguyện cho hạnh phúc của nhau.`,
+  formSentHold: `Chúng tôi hiểu rằng bạn đã nhận được phản hồi đang chờ xử lý cho lời mời đám cưới trực tuyến của mình. Cảm ơn bạn đã dành thời gian trong lịch trình bận rộn của mình để trả lời. Nếu có bất kỳ thay đổi nào, xin vui lòng liên hệ với chúng tôi. Chúng tôi mong được gặp bạn tại đám cưới!`,
+  formSentEdit: `Nếu bạn muốn chỉnh sửa câu trả lời của mình, vui lòng nhấp vào nút bên dưới.`,
+  edit: "Chỉnh sửa nội dung",
+  finalConfirmation: "Xác nhận lần cuối",
+  ok: "Gửi thông tin tham dự của bạn",
+  cancel: "Quay lại màn hình nhập thông tin",
+  thankYouAttend: `Đã xác nhân tham gia<br>
   <br>
-  パーティー情報に関しては招待状でご確認下さい。<br>
+  Vui lòng kiểm tra thư mời để biết thông tin về bữa tiệc.<br>
   <br>
-  不明点がありましたら、<br>主催者様にお問い合わせ下さい。`,
-  thankYouDecline: `「欠席」でお伝えしました。<br>
+  Nếu có thắc mắc gì,<br>vui lòng liên hệ với BTC`,
+  thankYouDecline: `Đã xác nhận từ chối<br>
   <br>
-  不明点がありましたら、<br>主催者様にお問い合わせ下さい。`,
-  thankYouHold: `「保留」でお伝えしました。<br>
+  Nếu có thắc mắc gì,<br>vui lòng liên hệ với BTC`,
+  thankYouHold: `Đã xác nhận là Chờ <br>
   <br>
-  パーティー情報は、新郎新婦様より LINE・メール・QRコード等で送られた招待状で確認してください。 <br>
+  Vui lòng kiểm tra thông tin bên trên thiệp mời được cô dâu chú rể gửi qua LINE, email, mã QR, v.v. <br>
   <br>
-  お返事は期日までに、招待状に再度アクセスしてご返答してください。 <br>
+  Vui lòng truy cập lại lời mời và trả lời trước thời hạn.<br>
   <br>
-  不明点がありましたら、<br>主催者様にお問い合わせ下さい。`,
+  Nếu có thắc mắc gì,<br>vui lòng liên hệ với BTC`,
   groomName: "Bùi Mạnh Khoa",
   brideName: "Nguyễn Thị Thùy Dương",
-  groomBirth: "Sinh vào tháng 12 năm 1985 tại Đan Phượng Hà Nội.",
+  groomBirth: "Sinh vào tháng 12 năm 1985 tại Hà Nội.",
   brideBirth: "Sinh vào năm 1998, được thừa hưởng sự giao thoa từ 2 vùng đất Thái Bình và Quảng Ninh.",
   groomIntro: `Sang Nhật từ 2008, hiện đang làm việc về IT tại Nhật.<br/>
   Sở thích bóng đá, Messi, golf, ăn đồ cô dâu nấu, fan starbucks.<br/>`,
