@@ -24,7 +24,7 @@ export const TopSlide: FC<Props> = ({ urls }) => {
   useEffect(() => {
     const id = setTimeout(() => {
       ref.current?.slickNext();
-    }, 3500);
+    }, 4000);
     return () => clearTimeout(id);
   }, []);
 
