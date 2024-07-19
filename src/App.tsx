@@ -6,7 +6,6 @@ import {
   GuestFormSection,
   HostSection,
   InformationSection,
-  LanguageSwitcher,
   TopAnimatedText,
   TopSlide,
 } from "./components";
@@ -44,11 +43,11 @@ const Hero = styled.div`
   overflow: hidden;
 `;
 
-const LanguageSwitcherWrapper = styled.div`
-  position: absolute;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  padding: 5vh 0;
-`;
+// const LanguageSwitcherWrapper = styled.div`
+//   position: absolute;
+//   bottom: 0;
+//   display: flex;
+//   justify-content: center;
+//   width: 100%;
+//   padding: 5vh 0;
+// `;

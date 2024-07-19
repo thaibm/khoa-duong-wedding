@@ -206,51 +206,51 @@ const Link = styled.a`
   color: #fff;
 `;
 
-const DressCode = styled.div`
-  display: inline-block;
-  width: 25%;
-  padding: 8px 16px;
+// const DressCode = styled.div`
+//   display: inline-block;
+//   width: 25%;
+//   padding: 8px 16px;
 
-  @media screen and (min-width: 481px) {
-    width: 40%;
-  }
+//   @media screen and (min-width: 481px) {
+//     width: 40%;
+//   }
 
-  &.gold {
-    background: url("/img/gold.png") no-repeat center / cover;
-    color: #333;
-  }
+//   &.gold {
+//     background: url("/img/gold.png") no-repeat center / cover;
+//     color: #333;
+//   }
 
-  &.black {
-    background-color: #222;
-  }
+//   &.black {
+//     background-color: #222;
+//   }
 
-  &.green {
-    background-color: #233623;
-  }
+//   &.green {
+//     background-color: #233623;
+//   }
 
-  &.brown {
-    background-color: rgb(51 31 26);
-  }
-`;
+//   &.brown {
+//     background-color: rgb(51 31 26);
+//   }
+// `;
 
-const DressCodeMessage = styled.div`
-  font-size: 18px;
-  line-height: 1.7;
-  margin: 16px 0;
-`;
+// const DressCodeMessage = styled.div`
+//   font-size: 18px;
+//   line-height: 1.7;
+//   margin: 16px 0;
+// `;
 
-const H3 = styled.div`
-  margin: 16px 0 8px;
-  font-size: 18px;
-`;
+// const H3 = styled.div`
+//   margin: 16px 0 8px;
+//   font-size: 18px;
+// `;
 
-const DressCodeSection = styled.div`
-  background: url("/img/bg-thiepcuoi.jpg") no-repeat center / contain;
-  padding: 90px 16px;
-  color: #fff;
-  text-align: center;
-  height: 800px;
-`;
+// const DressCodeSection = styled.div`
+//   background: url("/img/bg-thiepcuoi.jpg") no-repeat center / contain;
+//   padding: 90px 16px;
+//   color: #fff;
+//   text-align: center;
+//   height: 800px;
+// `;
 
 const AddToCalendarWrapper = styled.div`
   display: flex;

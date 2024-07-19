@@ -1,4 +1,4 @@
-import axios from "axios";
+// import axios from "axios";
 import { doc, getDoc } from "firebase/firestore";
 import { useEffect, useMemo, useState } from "react";
 import { useForm } from "react-hook-form";
@@ -9,7 +9,6 @@ import { db } from "../firebaseApp";
 import { Heading } from "./Heading";
 import { Heading2 } from "./Heading2";
 import { InViewAnimation } from "./InViewAnimation";
-import { clearScreenDown } from "readline";
 
 export type FormData = {
   guestType: "groomGuest" | "brideGuest";
@@ -61,24 +60,24 @@ export const fields = [
   "attendance",
 ];
 
-type GetAddressResponse = {
-  allAddress: string;
-}[];
+// type GetAddressResponse = {
+//   allAddress: string;
+// }[];
 
-const getAddressFromZipCode = async (zipCode: string) => {
-  const API_KEY = "KuH7g1jijGs4jn6Ian4PylGFFVZdyj5sjOjeh0p"; // 🥹
-  const res = await axios.get<GetAddressResponse>(
-    `https://apis.postcode-jp.com/api/v5/postcodes/${zipCode}`,
-    {
-      params: {
-        apikey: API_KEY,
-        fields: "allAddress",
-      },
-    }
-  );
+// const getAddressFromZipCode = async (zipCode: string) => {
+//   const API_KEY = "KuH7g1jijGs4jn6Ian4PylGFFVZdyj5sjOjeh0p"; // 🥹
+//   const res = await axios.get<GetAddressResponse>(
+//     `https://apis.postcode-jp.com/api/v5/postcodes/${zipCode}`,
+//     {
+//       params: {
+//         apikey: API_KEY,
+//         fields: "allAddress",
+//       },
+//     }
+//   );
 
-  return res.data ? res.data[0].allAddress : "";
-};
+//   return res.data ? res.data[0].allAddress : "";
+// };
 
 const RequiredLabel = () => {
   const { t } = useTranslation();
@@ -104,20 +103,20 @@ export const GuestFormSection = () => {
     setCompanionCount((count) => count + 1);
   };
 
-  const handleZipCodeBlur = async () => {
-    try {
-      const { zip1, zip2, address } = getValues();
-      const zipCode = `${zip1}${zip2}`;
-      if (zipCode.length === 7 && !address) {
-        const addressFromApi = await getAddressFromZipCode(zipCode);
-        if (addressFromApi) {
-          setValue("address", addressFromApi);
-        }
-      }
-    } catch (e) {
-      console.error(e);
-    }
-  };
+  // const handleZipCodeBlur = async () => {
+  //   try {
+  //     const { zip1, zip2, address } = getValues();
+  //     const zipCode = `${zip1}${zip2}`;
+  //     if (zipCode.length === 7 && !address) {
+  //       const addressFromApi = await getAddressFromZipCode(zipCode);
+  //       if (addressFromApi) {
+  //         setValue("address", addressFromApi);
+  //       }
+  //     }
+  //   } catch (e) {
+  //     console.error(e);
+  //   }
+  // };
 
   const onSubmit = handleSubmit(async (data) => {
     // if (!id) return;
@@ -470,10 +469,10 @@ const NameInputWrapper = styled.div`
   }
 `;
 
-const ZipInputWrapper = styled.div`
-  display: inline-block;
-  width: 35%;
-`;
+// const ZipInputWrapper = styled.div`
+//   display: inline-block;
+//   width: 35%;
+// `;
 
 const Intro = styled.div`
   line-height: 1.2;
